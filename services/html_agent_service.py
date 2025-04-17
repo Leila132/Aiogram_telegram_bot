@@ -9,7 +9,7 @@ class HtmlAgentService:
     def __init__(self, repository: QueryRepository):
         self.repository = repository
 
-    async def get_average_price_grom_queries(self) -> str:
+    async def get_average_price_from_queries(self) -> str:
         try:
             queries = await self.repository.get_all()
 
