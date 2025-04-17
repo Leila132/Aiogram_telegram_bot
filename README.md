@@ -56,9 +56,9 @@ cd Aiogram_telegram_bot
 pip install -r requirements.txt
 ```
 4. Создайте файл с переменными окружения:
-
-`touch .env`
-
+```
+touch .env
+```
 Содержимое файла:
 ```
 API_TOKEN = "token_from_telegram"
