@@ -1,4 +1,4 @@
-from sqlalchemy.orm import Session
+from sqlalchemy.ext.asyncio import AsyncSession
 from models import Status
 from typing import List, Optional
 from sqlalchemy.exc import SQLAlchemyError
@@ -7,7 +7,7 @@ from sqlalchemy import select
 
 
 class StatusRepository:
-    def __init__(self, db: Session):
+    def __init__(self, db: AsyncSession):
         self.db = db
 
     async def create(self, status_data: dict) -> Status:
