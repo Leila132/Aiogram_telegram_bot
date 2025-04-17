@@ -44,17 +44,17 @@ Telegram-бот (bot.py) – обработка команд и взаимоде
 ## Установка
 
 1. Клонируйте репозиторий:
-
-`git clone https://github.com/Leila132/Aiogram_telegram_bot.git`
-
+```
+git clone https://github.com/Leila132/Aiogram_telegram_bot.git
+```
 2. Перейдите в директорию проекта:
-
-`cd Aiogram_telegram_bot`
-
+```
+cd Aiogram_telegram_bot
+```
 3. Установите зависимости:
-
-`pip install -r requirements.txt`
-
+```
+pip install -r requirements.txt
+```
 4. Создайте файл с переменными окружения:
 
 `touch .env`
