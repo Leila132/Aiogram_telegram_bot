@@ -5,7 +5,6 @@ from repositories.status_repository import StatusRepository
 from config.database import get_db
 from config.init_db import init_db
 from services.user_service import UserService
-from services.status_service import StatusService
 from services.query_service import QueryService
 from services.html_agent_service import HtmlAgentService
 import asyncio
@@ -67,7 +66,7 @@ async def all_button(message: types.Message):
         )
         repository_query = QueryRepository(db)
         html_agent_service = HtmlAgentService(repository_query)
-        answer = await html_agent_service.get_average_price_grom_queries()
+        answer = await html_agent_service.get_average_price_from_queries()
         await message.answer(answer, reply_markup=keyboard)
 
 
